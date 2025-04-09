@@ -14,15 +14,23 @@ bool comparePoints(std::pair <double, double> p1 , std::pair <double, double> p2
 		return false;
 	}
 }
+/* recibe como parámetro un vector que tiene como elementos puntos (x_i,y_i) en el plano */
+double brute_force(std::vector <std::pair <double, double>> set) {
+	int length = set.size();	
 
-/*double brute_force(std::vector<std::pair> set) {
-	int length = set.size();
-	int min = -1 // siempre asignará un nuevo minimo en la primera comparación
+	double min = INFINITY;
+	// como empezamos asignando la distancia minima como el valor set[0], recorremos el vector desde el siguiente elemento set[1]
 	for (int i = 1; i < length; i++) {
-		for(int j = 1; i < length; j++) {
-			int currentDistance = calculateDistance(set[i], set[j]);
-			if(currentDistance)
+		// calculamos distancia con el elemento i+1 en set
+		for(int j = (i+1); j < length; j++) {
+			int currentDistance = calculateDistance(set.at(i), set.at(j));
+			if(currentDistance < min) {
+				min = currentDistance;
+			}
+			else {
+				continue;
+			}
 		}
 	}
+	return min;
 }
-*/
