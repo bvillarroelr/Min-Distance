@@ -23,7 +23,7 @@ double brute_force(std::vector <std::pair <double, double>> set) {
 	for (int i = 0; i < length; i++) {
 		// calculamos distancia con el elemento i+1 en set
 		for(int j = (i+1); j < length; j++) {
-			int currentDistance = calculateDistance(set.at(i), set.at(j));
+			double currentDistance = calculateDistance(set.at(i), set.at(j));
 			if(currentDistance < min) {
 				min = currentDistance;
 			}

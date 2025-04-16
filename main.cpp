@@ -4,11 +4,11 @@
 int main(int argc, char const *argv[]) {
 
 
-	std::pair <double, double> pto1 (5,2);
-	std::pair <double, double> pto2 (1,2);
-	std::pair <double, double> pto3 (-3, 0);
-	std::pair <double, double> pto4 (15, 3);
-	std::pair <double, double> pto5 (1,2);
+	std::pair <double, double> pto1 (1,2);
+	std::pair <double, double> pto2 (3,4);
+	std::pair <double, double> pto3 (5,6);
+	std::pair <double, double> pto4 (7,8);
+	std::pair <double, double> pto5 (9,10);
 
 	std::vector <std::pair <double, double>> set = {pto1, pto2, pto3, pto4, pto5};
 	
