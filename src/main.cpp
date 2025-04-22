@@ -3,7 +3,6 @@
 
 int main(int argc, char const *argv[]) {
 
-
 	std::pair <double, double> pto1 (1,2);
 	std::pair <double, double> pto2 (3,4);
 	std::pair <double, double> pto3 (5,6);
